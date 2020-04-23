@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Main">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Symptoms"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="120dp" />
+
+    <CheckBox
+        android:id="@+id/cough_chk_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cough"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+         />
+
+    <CheckBox
+        android:id="@+id/fever_chk_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fever"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <CheckBox
+        android:id="@+id/tiredness_chk_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiredness"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <CheckBox
+        android:id="@+id/bd_chk_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty In Breathing"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:background="@color/colorAccent"
+        android:text="Emergency"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <TextView
+        android:id="@+id/contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="400dp"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/colorButton"
+        android:textSize="100sp" />
+
+</LinearLayout>
